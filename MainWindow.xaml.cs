@@ -24,5 +24,15 @@ namespace TicTacToe
         {
             InitializeComponent();
         }
+
+        public void InvertButtonColors(object sender, RoutedEventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            Brush backgroundBrush = clickedButton.Background;
+            Brush foregroundBrush = clickedButton.Foreground;
+
+            clickedButton.Background = foregroundBrush;
+            clickedButton.Foreground = backgroundBrush;
+        }
     }
 }
