@@ -5,8 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TicTacToe"
         mc:Ignorable="d"
-        Title="Mein TicTacToe" Height="450" Width="800">
-    <Grid>
-
+        Title="Mein TicTacToe" Height="500" Width="500">
+    <Grid Height="484" VerticalAlignment="Top">
+        <Grid HorizontalAlignment="Center" Name="Spielfeld" Height="364" VerticalAlignment="Center" Width="338">
+            <Border BorderBrush="Black" BorderThickness="2" Grid.ColumnSpan="2" Margin="0,0,112,121" Grid.RowSpan="2">
+                <Button Content="Button" Name="kaestchen_1_1" Margin="0,0,-2,0"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="2" Grid.Column="1">
+                <Button Content="Button" Name="kaestchen_1_2"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="2" Grid.Column="2">
+                <Button Content="Button" Name="kaestchen_1_3" HorizontalAlignment="Left" VerticalAlignment="Top" Height="122" Width="112"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="2" Grid.Row="1">
+                <Button Content="Button" Name="kaestchen_2_1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="122" Width="112"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="2" Grid.Column="1" Grid.Row="1">
+                <Button Content="Button" Name="kaestchen_2_2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="122" Width="112"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="2" Grid.Column="2" Grid.Row="1">
+                <Button Content="Button" Name="kaestchen_2_3" HorizontalAlignment="Left" VerticalAlignment="Top" Height="122" Width="112"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="2" Grid.Row="2">
+                <Button Content="Button" Name="kaestchen_3_1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="122" Width="112"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="2" Grid.Column="1" Grid.Row="2">
+                <Button Content="Button" Name="kaestchen_3_2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="122" Width="112"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="2" Grid.Column="2" Grid.Row="2">
+                <Button Content="Button" Name="kaestchen_3_3" HorizontalAlignment="Left" VerticalAlignment="Top" Height="122" Width="112"/>
+            </Border>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+        </Grid>
     </Grid>
 </Window>
